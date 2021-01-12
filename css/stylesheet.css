@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face  {
+    font-family: Aharoni;
+    src: url(../FONT/ahronbd_0.ttf);
+}
+
+
+
+
+header  {
+    display: flex;
+    align-items: center;
+    background-color: #000 ;
+    padding: 2rem 5%;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    font-family: Aharoni;
+}
+
+header h1   {
+    display: inline-block;
+}
+
+.tag-line   {
+    font-size: .9rem;
+    display: block;
+    font-weight: 300;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.container  {
+    background-color: rgb(120, 180, 60);
+    opacity: .8;
+    padding: 3rem;
+}
+
+
+
+
+/* Slideshow Container */
+.slideshow-container    {
+    max-width: 700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    filter: drop-shadow(-1px 10px 5px rgba(0, 0, 0, 0.514));
+}
+
+
+/* Hide Images by Default */
+.mySlides   {
+    display: none;
+}
+
+.partners   {
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.863);
+    transition: .8s ease;
+}
+
+.connect   {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    transition: .8s ease;
+}
+
+.connect:hover, .partners:hover  {
+    scale: 1.1;
+}
+
+.home   {
+    display: block;
+}
+/* Next & Previous Buttons */
+.prev, .next    {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 3rem;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position Next button to the right */
+.next   {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+    }
+
+.prev:hover, .next:hover    {
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
+/* Caption Text */
+.caption    {
+    color: #ffffff;
+    background-color: rgba(0, 128, 0, 0.308);
+    font-size: 1rem;
+    font-family: Aharoni;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.caption h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    width: 70%;
+}
+
+.caption p, .caption li {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    width: 70%;
+}
+
+
+/* The Dots/Circles/Indicators */
+.dot    {
+    cursor: pointer;
+    position: relative;
+    bottom: 2rem;
+    height: 15px;
+    width: 15px;
+    margin: 2px 2px 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+
+
+footer  {
+    background-color: #000;
+    color: #fff;
+    font-size: .8rem;
+    text-align: center;
+    font-family: Arial;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+footer a    {
+    text-decoration: none;
+    color: #717171;
+}
