@@ -47,11 +47,14 @@ table {
 	border-spacing: 0;
 }
 
-@font-face  {
-    font-family: Aharoni;
-    src: url(../FONT/ahronbd_0.ttf);
-}
 
+
+/* ************************************************************* */
+/* ************************************************************* */
+/* ************************************************************* */
+/* ************************************************************* */
+/* ************************************************************* */
+/* ************************************************************* */
 
 
 
@@ -62,8 +65,9 @@ header  {
     padding: 2rem 5%;
     color: #fff;
     font-size: 2rem;
+	font-weight: 700;
     text-align: right;
-    font-family: Aharoni;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header h1   {
@@ -84,7 +88,9 @@ header h1   {
     padding: 3rem;
 }
 
-
+#contain	{
+	display: none;
+}
 
 
 /* Slideshow Container */
@@ -157,7 +163,7 @@ header h1   {
     color: #ffffff;
     background-color: rgba(0, 128, 0, 0.308);
     font-size: 1rem;
-    font-family: Aharoni;
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,12 +180,14 @@ header h1   {
 .caption h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    font-weight: 700;
     width: 70%;
 }
 
 .caption p, .caption li {
     font-size: 1rem;
     line-height: 1.2rem;
+    font-weight: 400;
     width: 70%;
 }
 

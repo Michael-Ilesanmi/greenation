@@ -1,3 +1,8 @@
+function displayContent()   {
+    document.getElementById('contain').style.display = 'block';
+}
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
